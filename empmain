@@ -1,0 +1,24 @@
+//  main.cpp
+//  Lab07_PC
+//  Created by Pedro Calderon on 12/6/23.
+
+#include "employee.cpp"
+#include <iostream>
+using namespace std;
+
+int main(int argc, const char * argv[]) {
+    // Constructor overloads in each class
+    Employee pedro;
+    pedro.setName("Pedro");
+    
+    Employee pedro2("Pedro",20402260,"Today");
+    
+    ProductionWorker pedro3("Pedro",20402260,"Today",1,27.75);
+    pedro3.printAll();
+    // Constructor initialization list in at least one class and constructor chaining in one derived class
+    
+    // Static binding/ redefinition in the classes and their use in main
+    
+    // dynamic binding / overriding in the classes and their use in main
+    return 0;
+}
